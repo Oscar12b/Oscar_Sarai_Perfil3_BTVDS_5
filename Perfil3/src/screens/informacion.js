@@ -14,7 +14,7 @@ function Estudiantes() {
         },
         {
             id: '2',
-            nombre: 'Sarai Monterrosa',
+            nombre: 'Sarai Monterroza',
             grado: 'Desarrollo de Software',
             carnet: '20190288',
             imagen: 'https://scontent.cdninstagram.com/v/t51.2885-19/431624540_2045095042542986_4996804495196886906_n.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent.cdninstagram.com&_nc_cat=102&_nc_ohc=UjFctUZW5CAQ7kNvgFq4KXm&edm=APs17CUBAAAA&ccb=7-5&oh=00_AYBqn2UJjfR8N8RB0KVnAT69qXxA3Dy6zf5cxT8er-nj9w&oe=66534081&_nc_sid=10d13b',
