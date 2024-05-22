@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { View, Text } from 'react-native';
+import { View, Text, FlatList } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 // Define tus pantallas
@@ -22,9 +22,26 @@ function Información() {
 }
 
 function Comidas() {
+  const comidasFavoritas = [
+    { id: '1', nombre: 'Pizza' },
+    { id: '2', nombre: 'Sushi' },
+    { id: '3', nombre: 'Tacos' },
+    { id: '4', nombre: 'Pasta' },
+    { id: '5', nombre: 'Hamburguesa' },
+  ];
+
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Comidas favoritas</Text>
+      <Text style={{ fontSize: 20, marginBottom: 20 }}>Comidas favoritas</Text>
+      <FlatList
+        data={comidasFavoritas}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => (
+          <View style={{ padding: 10 }}>
+            <Text style={{ fontSize: 18 }}>{item.nombre}</Text>
+          </View>
+        )}
+      />
     </View>
   );
 }
