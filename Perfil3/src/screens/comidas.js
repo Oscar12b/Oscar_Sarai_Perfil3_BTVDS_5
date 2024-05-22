@@ -15,7 +15,6 @@ function Comidas() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Comidas favoritas</Text>
             <FlatList
                 data={comidasFavoritas}
                 keyExtractor={(item) => item.id}
@@ -53,7 +52,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         borderRadius: 8,
         padding: 20,
-        marginBottom: 20,
+        marginBottom: 10,
+        marginTop: 10,
         marginRight: 20,
         width: '45%',
         shadowColor: '#000',
